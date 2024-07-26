@@ -1,6 +1,6 @@
 # React SocketIO Chat
 
-<img width='100%' src='' />
+<img width='100%' src='https://github.com/yunyoungsik/SocketIOChat/blob/main/public/thumnail.jpg?raw=true' />
 
 [참고영상](https://youtu.be/7p2mYyxUEZ4?si=QsuP9X9ld8HOIh3-)
 
