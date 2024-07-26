@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrap {
+  max-width: 450px;
+  min-width: 320px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  header {
+    width: 100%;
+    position: relative;
+    padding: 10px 10px 20px;
+    background-color: #002c6f;
+
+    .connect {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+
+      &.on {
+        background-color: lightgreen;
+      }
+
+      &.off {
+        background-color: red;
+      }
+    }
+
+    .name {
+      min-height: 100px;
+      align-self: flex-end;
+      display: flex;
+
+      form {
+        display: flex;
+        align-self: flex-end;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        max-height: 30px;
+
+        h1 {
+          font-size: 16px;
+          font-weight: bold;
+          color: white;
+        }
+
+        input {
+          flex: 1;
+          font-size: 16px;
+          font-weight: bold;
+          color: #ccc;
+          background-color: transparent;
+          border: none;
+          outline: none;
+        }
+
+        button {
+          padding: 5px 10px;
+          border-radius: 0;
+          color: #909090;
+          background-color: #e0e0e0;
+
+          &:hover {
+            background-color: rgb(229, 229, 229);
+            border: 1px solid #002c6f;
+            outline: 1px solid #002c6f;
+          }
+        }
+      }
+    }
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 300px;
+    background-color: #0d0d0d;
+    color: white;
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      flex: 1;
+      padding: 10px 10px 20px;
+      li {
+        list-style: none;
+      }
+    }
+
+    form {
+      display: flex;
+      justify-content: space-between;
+      min-height: 50px;
+      background-color: #79C3EA;
+
+      input {
+        flex: 1;
+        padding: 10px;
+        background-color: transparent;
+        border: 0;
+        outline: 0;
+        color: #0d0d0d;
+      }
+
+      button {
+        border-radius: 0;
+        background-color: transparent;
+        border: 0;
+        outline: 0;
+      }
+    }
+  }
+}
